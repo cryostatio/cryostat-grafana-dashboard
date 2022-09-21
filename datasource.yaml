@@ -1,9 +1,12 @@
+# Reference: https://grafana.com/docs/grafana/latest/administration/provisioning/
+# config file version
 apiVersion: 1
 
+# list of datasources to insert/update
 datasources:
-  - name: jfr-datasource
-    type: grafana-simple-json-datasource
-    access: proxy
+  - name: jfr-datasource # Name of the datasource. Required
+    type: grafana-simple-json-datasource # Datasource type. Required
+    access: proxy # Access mode. proxy or direct (Server or Browser in the UI). Required
     url: ${JFR_DATASOURCE_URL}
-    basicAuth: false
-    isDefault: true
+    basicAuth: false # Enable/disable basic auth
+    isDefault: true  # Mark as default datasource. Max one per org

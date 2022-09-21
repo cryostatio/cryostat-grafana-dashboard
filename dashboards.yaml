@@ -1,8 +1,11 @@
+# Reference: https://grafana.com/docs/grafana/latest/administration/provisioning/
+# config file version
 apiVersion: 1
 
-providers:
-    - name: Cryostat
-      disableDeletion: true
+# list of providers that load dashboards into Grafana on startup from the local filesystem.
+providers:  
+    - name: Cryostat # An unique provider name. Required
+      disableDeletion: true # Enable/disable dashboard deletion
       options:
-          path: /etc/grafana/provisioning/dashboards
-          foldersFromFilesStructure: true
+          path: /etc/grafana/provisioning/dashboards # Path to dashboard files on disk. Required when using the 'file' type (default)
+          foldersFromFilesStructure: true # Use folder names from filesystem to create folders in Grafana
