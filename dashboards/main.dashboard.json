@@ -24,7 +24,8 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "fixedColor": "text",
+            "mode": "fixed"
           },
           "decimals": 1,
           "mappings": [
@@ -36,19 +37,6 @@
               "value": "null"
             }
           ],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "rgb(255, 255, 255)",
-                "value": 80
-              }
-            ]
-          },
           "unit": "ms"
         },
         "overrides": []
@@ -98,7 +86,8 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "fixedColor": "text",
+            "mode": "fixed"
           },
           "mappings": [
             {
@@ -109,19 +98,6 @@
               "value": "null"
             }
           ],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "rgb(255, 255, 255)",
-                "value": ""
-              }
-            ]
-          },
           "unit": "dateTimeAsIso"
         },
         "overrides": []
@@ -185,7 +161,8 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "fixedColor": "text",
+            "mode": "fixed"
           },
           "mappings": [
             {
@@ -196,19 +173,6 @@
               "value": "null"
             }
           ],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "rgb(255, 255, 255)",
-                "value": ""
-              }
-            ]
-          },
           "unit": "none"
         },
         "overrides": []
@@ -257,7 +221,8 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "fixedColor": "text",
+            "mode": "fixed"
           },
           "mappings": [
             {
@@ -268,19 +233,6 @@
               "value": "null"
             }
           ],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "rgb(255, 255, 255)",
-                "value": ""
-              }
-            ]
-          },
           "unit": "none"
         },
         "overrides": []
@@ -329,7 +281,8 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "fixedColor": "text",
+            "mode": "fixed"
           },
           "mappings": [
             {
@@ -340,19 +293,6 @@
               "value": "null"
             }
           ],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "rgb(255, 255, 255)",
-                "value": ""
-              }
-            ]
-          },
           "unit": "bytes"
         },
         "overrides": []
@@ -1579,22 +1519,10 @@
           "fieldConfig": {
             "defaults": {
               "color": {
-                "mode": "thresholds"
+                "fixedColor": "text",
+                "mode": "fixed"
               },
               "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": null
-                  },
-                  {
-                    "color": "rgb(255, 255, 255)",
-                    "value": ""
-                  }
-                ]
-              },
               "unit": "ms"
             },
             "overrides": []
