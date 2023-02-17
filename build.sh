@@ -8,4 +8,4 @@ if [ -z "$BUILDER" ]; then
     BUILDER="podman"
 fi
 
-$BUILDER build -t $GRAFANA_IMAGE:latest -f "$(dirname $0)"/Containerfile
+$BUILDER build -t $GRAFANA_IMAGE:latest -f "$(dirname $0)"/Dockerfile
