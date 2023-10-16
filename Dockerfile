@@ -1,4 +1,4 @@
-FROM docker.io/grafana/grafana:9.5.7
+FROM docker.io/grafana/grafana:10.1.5
 
 EXPOSE 3000
 
