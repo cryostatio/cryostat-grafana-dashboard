@@ -579,10 +579,35 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.PhysicalMemory.usedSize",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "rawQuery": false,
           "refId": "A",
+          "root_selector": "datapoints",
+          "source": "url",
           "target": "jdk.PhysicalMemory.usedSize",
-          "type": "timeserie"
+          "type": "json",
+          "url": "/query",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.PhysicalMemory.usedSize\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+            "method": "POST"
+          }
         }
       ],
       "title": "Used Physical Memory",
@@ -1976,7 +2001,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "schemaVersion": 39,
   "tags": [],
   "templating": {
