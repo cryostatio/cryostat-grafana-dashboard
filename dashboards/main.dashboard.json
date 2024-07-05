@@ -478,19 +478,94 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.CPULoad.jvmUser",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "A",
           "target": "jdk.CPULoad.jvmUser",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CPULoad.jvmUser\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.CPULoad.jvmSystem",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "B",
           "target": "jdk.CPULoad.jvmSystem",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.jvmSystem\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.CPULoad.machineTotal",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "C",
           "target": "jdk.CPULoad.machineTotal",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.machineTotal\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         }
       ],
       "title": "CPU Load",
