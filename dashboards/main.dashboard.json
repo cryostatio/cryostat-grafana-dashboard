@@ -2464,29 +2464,154 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.CompilerStatistics.compileCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "A",
           "target": "jdk.CompilerStatistics.compileCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.compileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.CompilerStatistics.bailoutCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "B",
           "target": "jdk.CompilerStatistics.bailoutCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.bailoutCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.CompilerStatistics.invalidatedCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "C",
           "target": "jdk.CompilerStatistics.invalidatedCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.CompilerStatistics.invalidatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.CompilerStatistics.osrCompileCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "D",
           "target": "jdk.CompilerStatistics.osrCompileCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.CompilerStatistics.osrCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.CompilerStatistics.standardCompileCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "E",
           "target": "jdk.CompilerStatistics.standardCompileCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.CompilerStatistics.standardCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         }
       ],
       "title": "Compiler Statistics",
