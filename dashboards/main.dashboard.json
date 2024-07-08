@@ -870,14 +870,64 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.NetworkUtilization.readRate",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "A",
           "target": "jdk.NetworkUtilization.readRate",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.NetworkUtilization.readRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.NetworkUtilization.writeRate",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "B",
           "target": "jdk.NetworkUtilization.writeRate",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.NetworkUtilization.writeRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         }
       ],
       "title": "Network Utilization",
