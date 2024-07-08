@@ -1642,10 +1642,24 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "simple",
           "rawQuery": true,
           "refId": "A",
+          "root_selector": "",
+          "source": "url",
           "target": "jdk.ObjectAllocationSample.weight?objectClass=*",
-          "type": "timeserie"
+          "type": "json",
+          "url": "/query",
+          "url_options": {
+            "body_content_type": "text/plain",
+            "body_type": "raw",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ObjectAllocationSample.weight?objectClass=*\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+            "method": "POST"
+          }
         }
       ],
       "title": "Object Allocation Sample",
