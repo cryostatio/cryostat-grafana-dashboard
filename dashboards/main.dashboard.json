@@ -1844,34 +1844,184 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.MetaspaceSummary.metaspace:committed",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "A",
           "target": "jdk.MetaspaceSummary.metaspace:committed",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceSummary.metaspace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.MetaspaceSummary.metaspace:reserved",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "B",
           "target": "jdk.MetaspaceSummary.metaspace:reserved",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceSummary.metaspace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.MetaspaceSummary.metaspace:used",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "C",
           "target": "jdk.MetaspaceSummary.metaspace:used",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.MetaspaceSummary.metaspace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.MetaspaceSummary.dataSpace:committed",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "D",
           "target": "jdk.MetaspaceSummary.dataSpace:committed",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.MetaspaceSummary.dataSpace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.MetaspaceSummary.dataSpace:reserved",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "E",
-          "target": "jdk.MetaspaceSummary.dataSpace:used",
-          "type": "timeserie"
+          "target": "jdk.MetaspaceSummary.dataSpace:reserved",
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.MetaspaceSummary.dataSpace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.MetaspaceSummary.dataSpace:used",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "F",
-          "target": "jdk.MetaspaceSummary.dataSpace:reserved",
-          "type": "timeserie"
+          "target": "jdk.MetaspaceSummary.dataSpace:used",
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"F\", \"target\": \"jdk.MetaspaceSummary.dataSpace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         }
       ],
       "title": "Metaspace Summary",
