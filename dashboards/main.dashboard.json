@@ -1640,7 +1640,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "7.5.15",
+      "pluginVersion": "10.4.3",
       "targets": [
         {
           "rawQuery": true,
