@@ -1188,24 +1188,125 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.JavaThreadStatistics.accumulatedCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "A",
           "target": "jdk.JavaThreadStatistics.accumulatedCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.JavaThreadStatistics.accumulatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.JavaThreadStatistics.activeCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "B",
           "target": "jdk.JavaThreadStatistics.activeCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.JavaThreadStatistics.activeCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.JavaThreadStatistics.daemonCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "C",
           "target": "jdk.JavaThreadStatistics.daemonCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.JavaThreadStatistics.daemonCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
         },
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "jdk.JavaThreadStatistics.peakCount",
+              "type": "number"
+            },
+            {
+              "selector": "1",
+              "text": "timestamp",
+              "type": "timestamp_epoch"
+            }
+          ],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "D",
           "target": "jdk.JavaThreadStatistics.peakCount",
-          "type": "timeserie"
+          "type": "json",
+          "root_selector": "datapoints",
+          "source": "url",
+          "url": "/query",
+          "url_options": {
+              "body_content_type": "application/json",
+              "body_type": "raw",
+              "method": "POST",
+              "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.JavaThreadStatistics.peakCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+          }
+
         }
       ],
       "title": "Java Thread Statistics",
