@@ -18,6 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
+  "id": 1,
   "links": [],
   "panels": [
     {
@@ -62,7 +63,7 @@
         "x": 0,
         "y": 0
       },
-      "id": 1,
+      "id": 2,
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -147,7 +148,7 @@
         "x": 3,
         "y": 0
       },
-      "id": 2,
+      "id": 3,
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -199,13 +200,8 @@
         "x": 0,
         "y": 3
       },
-      "id": 3,
+      "id": 4,
       "panels": [],
-      "targets": [
-        {
-          "refId": "A"
-        }
-      ],
       "title": "CPU & Memory",
       "type": "row"
     },
@@ -250,7 +246,7 @@
         "x": 0,
         "y": 4
       },
-      "id": 4,
+      "id": 5,
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -341,7 +337,7 @@
         "x": 3,
         "y": 4
       },
-      "id": 5,
+      "id": 6,
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -432,7 +428,7 @@
         "x": 6,
         "y": 4
       },
-      "id": 6,
+      "id": 7,
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -544,7 +540,7 @@
         "x": 0,
         "y": 7
       },
-      "id": 7,
+      "id": 8,
       "options": {
         "legend": {
           "calcs": [
@@ -581,16 +577,16 @@
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
-          "target": "jdk.CPULoad.jvmUser",
-          "type": "json",
           "root_selector": "datapoints",
           "source": "url",
+          "target": "jdk.CPULoad.jvmUser",
+          "type": "json",
           "url": "/query",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CPULoad.jvmUser\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CPULoad.jvmUser\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+            "method": "POST"
           }
         },
         {
@@ -611,16 +607,16 @@
           "global_query_id": "",
           "parser": "backend",
           "refId": "B",
-          "target": "jdk.CPULoad.jvmSystem",
-          "type": "json",
           "root_selector": "datapoints",
           "source": "url",
+          "target": "jdk.CPULoad.jvmSystem",
+          "type": "json",
           "url": "/query",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.jvmSystem\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.jvmSystem\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+            "method": "POST"
           }
         },
         {
@@ -641,16 +637,16 @@
           "global_query_id": "",
           "parser": "backend",
           "refId": "C",
-          "target": "jdk.CPULoad.machineTotal",
-          "type": "json",
           "root_selector": "datapoints",
           "source": "url",
+          "target": "jdk.CPULoad.machineTotal",
+          "type": "json",
           "url": "/query",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.machineTotal\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.machineTotal\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+            "method": "POST"
           }
         }
       ],
@@ -719,7 +715,7 @@
         "x": 0,
         "y": 13
       },
-      "id": 8,
+      "id": 9,
       "maxDataPoints": 100,
       "options": {
         "legend": {
@@ -782,2123 +778,2099 @@
         "x": 0,
         "y": 19
       },
-      "id": 9,
-      "panels": [],
-      "targets": [
+      "id": 10,
+      "panels": [
         {
-          "refId": "A"
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "binBps"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 13,
+            "x": 0,
+            "y": 20
+          },
+          "id": 11,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.NetworkUtilization.readRate",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.NetworkUtilization.readRate",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.NetworkUtilization.readRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.NetworkUtilization.writeRate",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.NetworkUtilization.writeRate",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.NetworkUtilization.writeRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Network Utilization",
+          "type": "timeseries"
         }
       ],
       "title": "Network",
       "type": "row"
     },
     {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "binBps"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 13,
-        "x": 0,
-        "y": 20
-      },
-      "id": 10,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.NetworkUtilization.readRate",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.NetworkUtilization.readRate",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.NetworkUtilization.readRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.NetworkUtilization.writeRate",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "B",
-          "target": "jdk.NetworkUtilization.writeRate",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.NetworkUtilization.writeRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Network Utilization",
-      "type": "timeseries"
-    },
-    {
       "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 26
+        "y": 20
       },
-      "id": 11,
-      "panels": [],
-      "targets": [
+      "id": 12,
+      "panels": [
         {
-          "refId": "A"
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "binBps"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 13,
+            "x": 0,
+            "y": 21
+          },
+          "id": 13,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.FileRead",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.FileRead",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.FileRead\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.FileWrite",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.FileWrite",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.FileWrite\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "File Statistics",
+          "type": "timeseries"
         }
       ],
       "title": "Filesystem",
       "type": "row"
     },
     {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "binBps"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 13,
-        "x": 0,
-        "y": 27
-      },
-      "id": 12,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.FileRead",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.FileRead",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.FileRead\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.FileWrite",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "B",
-          "target": "jdk.FileWrite",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.FileWrite\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "File Statistics",
-      "type": "timeseries"
-    },
-    {
       "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 33
+        "y": 21
       },
-      "id": 13,
-      "panels": [],
-      "targets": [
+      "id": 14,
+      "panels": [
         {
-          "refId": "A"
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "short"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 10,
+            "x": 0,
+            "y": 22
+          },
+          "id": 15,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.JavaThreadStatistics.accumulatedCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.JavaThreadStatistics.accumulatedCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.JavaThreadStatistics.accumulatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.JavaThreadStatistics.activeCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.JavaThreadStatistics.activeCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.JavaThreadStatistics.activeCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.JavaThreadStatistics.daemonCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "C",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.JavaThreadStatistics.daemonCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.JavaThreadStatistics.daemonCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.JavaThreadStatistics.peakCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "D",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.JavaThreadStatistics.peakCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.JavaThreadStatistics.peakCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Java Thread Statistics",
+          "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "rothz"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 10,
+            "x": 10,
+            "y": 22
+          },
+          "id": 16,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.ThreadContextSwitchRate.switchRate",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "rawQuery": true,
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.ThreadContextSwitchRate.switchRate",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ThreadContextSwitchRate.switchRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Thread Context Switch Rate",
+          "type": "timeseries"
         }
       ],
       "title": "Threads",
       "type": "row"
     },
     {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "short"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 10,
-        "x": 0,
-        "y": 34
-      },
-      "id": 14,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.JavaThreadStatistics.accumulatedCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.JavaThreadStatistics.accumulatedCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.JavaThreadStatistics.accumulatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.JavaThreadStatistics.activeCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "B",
-          "target": "jdk.JavaThreadStatistics.activeCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.JavaThreadStatistics.activeCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.JavaThreadStatistics.daemonCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "C",
-          "target": "jdk.JavaThreadStatistics.daemonCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.JavaThreadStatistics.daemonCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.JavaThreadStatistics.peakCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "D",
-          "target": "jdk.JavaThreadStatistics.peakCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.JavaThreadStatistics.peakCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Java Thread Statistics",
-      "type": "timeseries"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "rothz"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 10,
-        "x": 10,
-        "y": 34
-      },
-      "id": 15,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.ThreadContextSwitchRate.switchRate",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "rawQuery": true,
-          "refId": "A",
-          "target": "jdk.ThreadContextSwitchRate.switchRate",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ThreadContextSwitchRate.switchRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Thread Context Switch Rate",
-      "type": "timeseries"
-    },
-    {
       "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 40
+        "y": 22
       },
-      "id": 16,
-      "panels": [],
-      "targets": [
+      "id": 17,
+      "panels": [
         {
-          "refId": "A"
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 10,
+            "x": 0,
+            "y": 23
+          },
+          "id": 18,
+          "options": {
+            "legend": {
+              "calcs": [
+                "max",
+                "min"
+              ],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.GCHeapSummary.heapUsed",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.GCHeapSummary.heapUsed",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.GCHeapSummary.heapUsed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Heap Usage",
+          "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "graph": false,
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": true,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 12,
+            "w": 10,
+            "x": 10,
+            "y": 23
+          },
+          "id": 19,
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Object Allocation Sample Dashboard",
+              "url": "d/obj_alloc_sample/object-allocation-sample-dashboard"
+            }
+          ],
+          "options": {
+            "graph": {},
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "simple",
+              "rawQuery": true,
+              "refId": "A",
+              "root_selector": "",
+              "source": "url",
+              "target": "jdk.ObjectAllocationSample.weight?objectClass=*",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "text/plain",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ObjectAllocationSample.weight?objectClass=*\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Object Allocation Sample",
+          "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "ms"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 10,
+            "x": 0,
+            "y": 29
+          },
+          "id": 20,
+          "options": {
+            "legend": {
+              "calcs": [
+                "max",
+                "min"
+              ],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.SafepointBegin.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.SafepointBegin.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.SafepointBegin.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Safepoint Duration",
+          "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 10,
+            "x": 0,
+            "y": 35
+          },
+          "id": 21,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.MetaspaceSummary.metaspace:committed",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.MetaspaceSummary.metaspace:committed",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceSummary.metaspace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.MetaspaceSummary.metaspace:reserved",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.MetaspaceSummary.metaspace:reserved",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceSummary.metaspace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.MetaspaceSummary.metaspace:used",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "C",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.MetaspaceSummary.metaspace:used",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.MetaspaceSummary.metaspace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.MetaspaceSummary.dataSpace:committed",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "D",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.MetaspaceSummary.dataSpace:committed",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.MetaspaceSummary.dataSpace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.MetaspaceSummary.dataSpace:reserved",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "E",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.MetaspaceSummary.dataSpace:reserved",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.MetaspaceSummary.dataSpace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.MetaspaceSummary.dataSpace:used",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "F",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.MetaspaceSummary.dataSpace:used",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"F\", \"target\": \"jdk.MetaspaceSummary.dataSpace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Metaspace Summary",
+          "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 10,
+            "x": 10,
+            "y": 35
+          },
+          "id": 22,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.MetaspaceGCThreshold.oldValue",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.MetaspaceGCThreshold.oldValue",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceGCThreshold.oldValue\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.MetaspaceGCThreshold.newValue",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.MetaspaceGCThreshold.newValue",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceGCThreshold.newValue\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Metaspace GC Threshold",
+          "type": "timeseries"
         }
       ],
       "title": "Heap",
       "type": "row"
     },
     {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "bytes"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 10,
-        "x": 0,
-        "y": 41
-      },
-      "id": 17,
-      "options": {
-        "legend": {
-          "calcs": [
-            "max",
-            "min"
-          ],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.GCHeapSummary.heapUsed",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.GCHeapSummary.heapUsed",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.GCHeapSummary.heapUsed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Heap Usage",
-      "type": "timeseries"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "graph": false,
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": true,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "bytes"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 10,
-        "x": 10,
-        "y": 41
-      },
-      "id": 18,
-      "links": [
-        {
-          "targetBlank": true,
-          "title": "Object Allocation Sample Dashboard",
-          "url": "d/obj_alloc_sample/object-allocation-sample-dashboard"
-        }
-      ],
-      "options": {
-        "graph": {},
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "simple",
-          "rawQuery": true,
-          "refId": "A",
-          "root_selector": "",
-          "source": "url",
-          "target": "jdk.ObjectAllocationSample.weight?objectClass=*",
-          "type": "json",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "text/plain",
-            "body_type": "raw",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ObjectAllocationSample.weight?objectClass=*\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Object Allocation Sample",
-      "type": "timeseries"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "ms"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 10,
-        "x": 0,
-        "y": 47
-      },
-      "id": 19,
-      "options": {
-        "legend": {
-          "calcs": [
-            "max",
-            "min"
-          ],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.SafepointBegin.duration",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.SafepointBegin.duration",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.SafepointBegin.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Safepoint Duration",
-      "type": "timeseries"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "bytes"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 10,
-        "x": 0,
-        "y": 53
-      },
-      "id": 20,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.MetaspaceSummary.metaspace:committed",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.MetaspaceSummary.metaspace:committed",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceSummary.metaspace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.MetaspaceSummary.metaspace:reserved",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "B",
-          "target": "jdk.MetaspaceSummary.metaspace:reserved",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceSummary.metaspace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.MetaspaceSummary.metaspace:used",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "C",
-          "target": "jdk.MetaspaceSummary.metaspace:used",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.MetaspaceSummary.metaspace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.MetaspaceSummary.dataSpace:committed",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "D",
-          "target": "jdk.MetaspaceSummary.dataSpace:committed",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.MetaspaceSummary.dataSpace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.MetaspaceSummary.dataSpace:reserved",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "E",
-          "target": "jdk.MetaspaceSummary.dataSpace:reserved",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.MetaspaceSummary.dataSpace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.MetaspaceSummary.dataSpace:used",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "F",
-          "target": "jdk.MetaspaceSummary.dataSpace:used",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"F\", \"target\": \"jdk.MetaspaceSummary.dataSpace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Metaspace Summary",
-      "type": "timeseries"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "bytes"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 10,
-        "x": 10,
-        "y": 53
-      },
-      "id": 21,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.MetaspaceGCThreshold.oldValue",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.MetaspaceGCThreshold.oldValue",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceGCThreshold.oldValue\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.MetaspaceGCThreshold.newValue",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "B",
-          "target": "jdk.MetaspaceGCThreshold.newValue",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceGCThreshold.newValue\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Metaspace GC Threshold",
-      "type": "timeseries"
-    },
-    {
       "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 59
+        "y": 23
       },
-      "id": 22,
-      "panels": [],
-      "targets": [
+      "id": 23,
+      "panels": [
         {
-          "refId": "A"
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "fixedColor": "text",
+                "mode": "fixed"
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "ms"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 3,
+            "x": 0,
+            "y": 24
+          },
+          "id": 24,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {},
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.CompilerStatistics.peakTimeSpent",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.CompilerStatistics.peakTimeSpent",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.peakTimeSpent\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Compiler Peak Time",
+          "type": "stat"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "ms"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 10,
+            "x": 3,
+            "y": 24
+          },
+          "id": 25,
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "min"
+              ],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.CompilerStatistics.totalTimeSpent",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.CompilerStatistics.totalTimeSpent",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.totalTimeSpent\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Compiler: Total Time Spent",
+          "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "short"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 13,
+            "x": 0,
+            "y": 29
+          },
+          "id": 26,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.CompilerStatistics.compileCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.CompilerStatistics.compileCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.compileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.CompilerStatistics.bailoutCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.CompilerStatistics.bailoutCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.bailoutCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.CompilerStatistics.invalidatedCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "C",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.CompilerStatistics.invalidatedCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.CompilerStatistics.invalidatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.CompilerStatistics.osrCompileCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "D",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.CompilerStatistics.osrCompileCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.CompilerStatistics.osrCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.CompilerStatistics.standardCompileCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "E",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.CompilerStatistics.standardCompileCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.CompilerStatistics.standardCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Compiler Statistics",
+          "type": "timeseries"
         }
       ],
       "title": "Compiler",
       "type": "row"
     },
     {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "fixedColor": "text",
-            "mode": "fixed"
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "ms"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 5,
-        "w": 3,
-        "x": 0,
-        "y": 60
-      },
-      "id": 23,
-      "options": {
-        "colorMode": "value",
-        "graphMode": "none",
-        "justifyMode": "auto",
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showPercentChange": false,
-        "text": {},
-        "textMode": "auto",
-        "wideLayout": true
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.CompilerStatistics.peakTimeSpent",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.CompilerStatistics.peakTimeSpent",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.peakTimeSpent\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Compiler Peak Time",
-      "type": "stat"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "ms"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 5,
-        "w": 10,
-        "x": 3,
-        "y": 60
-      },
-      "id": 24,
-      "options": {
-        "legend": {
-          "calcs": [
-            "mean",
-            "max",
-            "min"
-          ],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.CompilerStatistics.totalTimeSpent",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.CompilerStatistics.totalTimeSpent",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.totalTimeSpent\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Compiler: Total Time Spent",
-      "type": "timeseries"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "short"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 13,
-        "x": 0,
-        "y": 65
-      },
-      "id": 25,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.CompilerStatistics.compileCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.CompilerStatistics.compileCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.compileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.CompilerStatistics.bailoutCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "B",
-          "target": "jdk.CompilerStatistics.bailoutCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.bailoutCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.CompilerStatistics.invalidatedCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "C",
-          "target": "jdk.CompilerStatistics.invalidatedCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.CompilerStatistics.invalidatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.CompilerStatistics.osrCompileCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "D",
-          "target": "jdk.CompilerStatistics.osrCompileCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.CompilerStatistics.osrCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.CompilerStatistics.standardCompileCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "E",
-          "target": "jdk.CompilerStatistics.standardCompileCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.CompilerStatistics.standardCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Compiler Statistics",
-      "type": "timeseries"
-    },
-    {
       "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 71
+        "y": 24
       },
-      "id": 26,
-      "panels": [],
-      "targets": [
+      "id": 27,
+      "panels": [
         {
-          "refId": "A"
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "short"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 10,
+            "x": 0,
+            "y": 25
+          },
+          "id": 28,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.ClassLoadingStatistics.unloadedClassCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.ClassLoadingStatistics.unloadedClassCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ClassLoadingStatistics.unloadedClassCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.ClassLoadingStatistics.loadedClassCount",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.ClassLoadingStatistics.loadedClassCount",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.ClassLoadingStatistics.loadedClassCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "ClassLoadingStatistics",
+          "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "none"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 10,
+            "x": 10,
+            "y": 25
+          },
+          "id": 29,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "jdk.ExceptionStatistics.throwables",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "jdk.ExceptionStatistics.throwables",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ExceptionStatistics.throwables\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Exception Statistics",
+          "type": "timeseries"
         }
       ],
       "title": "Others",
       "type": "row"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "short"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 10,
-        "x": 0,
-        "y": 72
-      },
-      "id": 27,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.ClassLoadingStatistics.unloadedClassCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.ClassLoadingStatistics.unloadedClassCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ClassLoadingStatistics.unloadedClassCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        },
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.ClassLoadingStatistics.loadedClassCount",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "B",
-          "target": "jdk.ClassLoadingStatistics.loadedClassCount",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.ClassLoadingStatistics.loadedClassCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "ClassLoadingStatistics",
-      "type": "timeseries"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "none"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 10,
-        "x": 10,
-        "y": 72
-      },
-      "id": 28,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.4.3",
-      "targets": [
-        {
-          "columns": [
-            {
-              "selector": "0",
-              "text": "jdk.ExceptionStatistics.throwables",
-              "type": "number"
-            },
-            {
-              "selector": "1",
-              "text": "timestamp",
-              "type": "timestamp_epoch"
-            }
-          ],
-          "filters": [],
-          "format": "as-is",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "target": "jdk.ExceptionStatistics.throwables",
-          "type": "json",
-          "root_selector": "datapoints",
-          "source": "url",
-          "url": "/query",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "method": "POST",
-            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ExceptionStatistics.throwables\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
-          }
-        }
-      ],
-      "title": "Exception Statistics",
-      "type": "timeseries"
     }
   ],
   "refresh": "",
