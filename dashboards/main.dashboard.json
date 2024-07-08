@@ -272,9 +272,29 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [
+            {
+              "selector": "0",
+              "text": "Cores",
+              "type": "number"
+            }
+          ],
+          "filters": [],
+          "format": "timeseries",
+          "global_query_id": "",
+          "parser": "backend",
           "refId": "A",
+          "root_selector": "datapoints",
+          "source": "url",
           "target": "jdk.CPUInformation.cores",
-          "type": "timeserie"
+          "type": "json",
+          "url": "/query",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"targets\":[{\"refId\":\"A\",\"target\":\"jdk.CPUInformation.cores\",\"type\":\"timeserie\"}],\"range\":{\"from\":\"${__timeFrom:date}\",\"to\":\"${__timeTo:date}\"}}",
+            "method": "POST"
+          }
         }
       ],
       "title": "CPU Cores",
