@@ -84,10 +84,23 @@
       "pluginVersion": "10.4.3",
       "targets": [
         {
+          "columns": [],
+          "filters": [],
+          "format": "as-is",
+          "global_query_id": "",
           "rawQuery": true,
           "refId": "A",
+          "root_selector": "",
+          "source": "url",
           "target": "events.custom.recordingDuration",
-          "type": "table"
+          "type": "json",
+          "url": "/query",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"events.custom.recordingDuration\", \"type\": \"table\" }], \"range\": {\"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\"} }",
+            "method": "POST"
+          }
         }
       ],
       "title": "Recording Duration",
