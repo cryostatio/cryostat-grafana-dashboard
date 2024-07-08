@@ -587,10 +587,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CPULoad.jvmUser\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CPULoad.jvmUser\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -617,10 +617,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.jvmSystem\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.jvmSystem\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -647,10 +647,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.machineTotal\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CPULoad.machineTotal\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -893,10 +893,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.NetworkUtilization.readRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.NetworkUtilization.readRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -923,10 +923,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.NetworkUtilization.writeRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.NetworkUtilization.writeRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -1052,10 +1052,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.FileRead\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.FileRead\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -1082,10 +1082,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.FileWrite\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.FileWrite\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -1211,10 +1211,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.JavaThreadStatistics.accumulatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.JavaThreadStatistics.accumulatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -1241,10 +1241,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.JavaThreadStatistics.activeCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.JavaThreadStatistics.activeCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -1271,10 +1271,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.JavaThreadStatistics.daemonCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.JavaThreadStatistics.daemonCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -1301,12 +1301,11 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.JavaThreadStatistics.peakCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.JavaThreadStatistics.peakCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
-
         }
       ],
       "title": "Java Thread Statistics",
@@ -1414,10 +1413,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ThreadContextSwitchRate.switchRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ThreadContextSwitchRate.switchRate\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -1546,10 +1545,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.GCHeapSummary.heapUsed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.GCHeapSummary.heapUsed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -1756,10 +1755,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.SafepointBegin.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.SafepointBegin.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -1867,10 +1866,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceSummary.metaspace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceSummary.metaspace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -1897,10 +1896,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceSummary.metaspace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceSummary.metaspace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -1927,10 +1926,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.MetaspaceSummary.metaspace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.MetaspaceSummary.metaspace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -1957,10 +1956,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.MetaspaceSummary.dataSpace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.MetaspaceSummary.dataSpace:committed\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -1987,10 +1986,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.MetaspaceSummary.dataSpace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.MetaspaceSummary.dataSpace:reserved\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -2017,10 +2016,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"F\", \"target\": \"jdk.MetaspaceSummary.dataSpace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"F\", \"target\": \"jdk.MetaspaceSummary.dataSpace:used\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -2128,10 +2127,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceGCThreshold.oldValue\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.MetaspaceGCThreshold.oldValue\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -2158,10 +2157,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceGCThreshold.newValue\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.MetaspaceGCThreshold.newValue\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -2261,10 +2260,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.peakTimeSpent\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.peakTimeSpent\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -2376,10 +2375,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.totalTimeSpent\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.totalTimeSpent\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -2487,10 +2486,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.compileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.CompilerStatistics.compileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -2517,10 +2516,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.bailoutCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.CompilerStatistics.bailoutCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -2547,10 +2546,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.CompilerStatistics.invalidatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"jdk.CompilerStatistics.invalidatedCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -2577,10 +2576,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.CompilerStatistics.osrCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"jdk.CompilerStatistics.osrCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -2607,10 +2606,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.CompilerStatistics.standardCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"jdk.CompilerStatistics.standardCompileCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -2736,10 +2735,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ClassLoadingStatistics.unloadedClassCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ClassLoadingStatistics.unloadedClassCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         },
         {
@@ -2766,10 +2765,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.ClassLoadingStatistics.loadedClassCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"jdk.ClassLoadingStatistics.loadedClassCount\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
@@ -2877,10 +2876,10 @@
           "source": "url",
           "url": "/query",
           "url_options": {
-              "body_content_type": "application/json",
-              "body_type": "raw",
-              "method": "POST",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ExceptionStatistics.throwables\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "method": "POST",
+            "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ExceptionStatistics.throwables\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }"
           }
         }
       ],
