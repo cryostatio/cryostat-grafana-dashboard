@@ -2,7 +2,7 @@ FROM docker.io/grafana/grafana:10.4.3
 
 EXPOSE 3000
 
-RUN grafana-cli plugins install yesoreyeram-infinity-datasource
+RUN grafana cli plugins install yesoreyeram-infinity-datasource
 
 COPY --chown=grafana:root \
 	dashboards.yaml \
