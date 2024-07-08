@@ -159,33 +159,27 @@
         "options": [],
         "query": {
           "infinityQuery": {
-            "columns": [
-              {
-                "selector": "0",
-                "text": "__text",
-                "type": "string"
-              }
-            ],
+            "columns": [],
             "filters": [],
             "format": "table",
             "parser": "backend",
             "rawQuery": true,
             "refId": "variable",
-            "root_selector": "datapoints",
+            "root_selector": "",
             "source": "url",
             "type": "json",
-            "url": "/query",
+            "url": "/search",
             "url_options": {
               "body_content_type": "application/json",
               "body_type": "raw",
-              "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"jdk.ObjectAllocationSample.objectClass\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"1970-01-01T00:00:00Z\", \"to\": \"2970-01-01T00:00:00Z\" }}",
+              "data": "{ \"target\": \"jdk.ObjectAllocationSample.objectClass\" }",
               "method": "POST"
             }
           },
           "query": "jdk.ObjectAllocationSample.objectClass",
           "queryType": "infinity"
         },
-        "refresh": 2,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 1,
