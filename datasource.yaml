@@ -5,8 +5,7 @@ apiVersion: 1
 # list of datasources to insert/update
 datasources:
   - name: jfr-datasource # Name of the datasource. Required
-    type: grafana-simple-json-datasource # Datasource type. Required
-    access: proxy # Access mode. proxy or direct (Server or Browser in the UI). Required
+    type: yesoreyeram-infinity-datasource # Datasource type. Required
     url: ${JFR_DATASOURCE_URL}
     basicAuth: false # Enable/disable basic auth
     isDefault: true  # Mark as default datasource. Max one per org
