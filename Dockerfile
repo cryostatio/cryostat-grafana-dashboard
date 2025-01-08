@@ -1,8 +1,8 @@
-FROM quay.io/centos/centos:stream9
+FROM quay.io/centos/centos:stream9-minimal
 
 EXPOSE 3000
 
-RUN dnf install -y grafana && /usr/sbin/grafana cli plugins install yesoreyeram-infinity-datasource
+RUN microdnf install -y grafana && /usr/sbin/grafana cli plugins install yesoreyeram-infinity-datasource
 
 COPY --chown=grafana:grafana \
     dashboards.yaml \
