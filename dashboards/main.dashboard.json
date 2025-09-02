@@ -1007,7 +1007,7 @@
             "h": 6,
             "w": 13,
             "x": 0,
-            "y": 37
+            "y": 45
           },
           "id": 13,
           "options": {
@@ -1161,7 +1161,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 23
+            "y": 31
           },
           "id": 15,
           "options": {
@@ -1361,7 +1361,7 @@
             "h": 6,
             "w": 10,
             "x": 10,
-            "y": 23
+            "y": 31
           },
           "id": 16,
           "options": {
@@ -1470,7 +1470,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1486,7 +1487,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 39
+            "y": 24
           },
           "id": 18,
           "options": {
@@ -1584,7 +1585,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1600,7 +1602,7 @@
             "h": 12,
             "w": 10,
             "x": 10,
-            "y": 39
+            "y": 24
           },
           "id": 19,
           "links": [
@@ -1692,7 +1694,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1708,7 +1711,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 45
+            "y": 30
           },
           "id": 20,
           "options": {
@@ -1805,7 +1808,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1821,7 +1825,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 51
+            "y": 36
           },
           "id": 21,
           "options": {
@@ -2065,7 +2069,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -2081,7 +2086,7 @@
             "h": 6,
             "w": 10,
             "x": 10,
-            "y": 51
+            "y": 36
           },
           "id": 22,
           "options": {
@@ -2204,7 +2209,7 @@
             "h": 5,
             "w": 3,
             "x": 0,
-            "y": 25
+            "y": 33
           },
           "id": 24,
           "options": {
@@ -2319,7 +2324,7 @@
             "h": 5,
             "w": 10,
             "x": 3,
-            "y": 25
+            "y": 33
           },
           "id": 25,
           "options": {
@@ -2433,7 +2438,7 @@
             "h": 6,
             "w": 13,
             "x": 0,
-            "y": 30
+            "y": 38
           },
           "id": 26,
           "options": {
@@ -2677,7 +2682,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 41
+            "y": 49
           },
           "id": 28,
           "options": {
@@ -2817,7 +2822,7 @@
             "h": 6,
             "w": 10,
             "x": 10,
-            "y": 41
+            "y": 49
           },
           "id": 29,
           "options": {
@@ -2939,7 +2944,7 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 5,
+            "h": 7,
             "w": 10,
             "x": 0,
             "y": 27
@@ -3013,6 +3018,452 @@
               }
             }
           ],
+          "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "timeticks"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 12,
+            "w": 9,
+            "x": 10,
+            "y": 27
+          },
+          "id": 33,
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "min"
+              ],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.CacheGet.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.CacheGet.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"org.hibernate.orm.CacheGet.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.CachePut.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.CachePut.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"B\", \"target\": \"org.hibernate.orm.CachePut.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.CollectionRecreateEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "C",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.CollectionRecreateEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"C\", \"target\": \"org.hibernate.orm.CollectionRecreateEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.CollectionRemoveEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "D",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.CollectionRemoveEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"D\", \"target\": \"org.hibernate.orm.CollectionRemoveEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.CollectionUpdateEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "E",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.CollectionUpdateEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"E\", \"target\": \"org.hibernate.orm.CollectionUpdateEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.DirtyCalculationEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "F",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.DirtyCalculationEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"F\", \"target\": \"org.hibernate.orm.DirtyCalculationEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.EntityDeleteEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "G",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.EntityDeleteEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"G\", \"target\": \"org.hibernate.orm.EntityDeleteEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.EntityInsertEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "H",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.EntityInsertEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"H\", \"target\": \"org.hibernate.orm.EntityInsertEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.EntityUpdateEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "I",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.EntityUpdateEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"I\", \"target\": \"org.hibernate.orm.EntityUpdateEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.EntityUpsertEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "J",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.EntityUpsertEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"J\", \"target\": \"org.hibernate.orm.EntityUpsertEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.FlushEvent.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "K",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.FlushEvent.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"K\", \"target\": \"org.hibernate.orm.FlushEvent.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "org.hibernate.orm.JdbcBatchExecution.duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "parser": "backend",
+              "refId": "L",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "org.hibernate.orm.JdbcBatchExecution.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{ \"targets\": [{ \"refId\": \"L\", \"target\": \"org.hibernate.orm.JdbcBatchExecution.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Hibernate ORM",
+          "transformations": [],
           "type": "timeseries"
         }
       ],
