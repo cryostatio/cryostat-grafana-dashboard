@@ -1304,10 +1304,6 @@
           "type": "timeseries"
         },
         {
-          "datasource": {
-            "type": "yesoreyeram-infinity-datasource",
-            "uid": "PD4BE12CA5EBC7EA7"
-          },
           "fieldConfig": {
             "defaults": {
               "color": {
@@ -2891,10 +2887,6 @@
       "id": 31,
       "panels": [
         {
-          "datasource": {
-            "type": "yesoreyeram-infinity-datasource",
-            "uid": "PD4BE12CA5EBC7EA7"
-          },
           "fieldConfig": {
             "defaults": {
               "color": {
