@@ -853,7 +853,7 @@
             "h": 6,
             "w": 13,
             "x": 0,
-            "y": 21
+            "y": 29
           },
           "id": 11,
           "options": {
@@ -1007,7 +1007,7 @@
             "h": 6,
             "w": 13,
             "x": 0,
-            "y": 45
+            "y": 53
           },
           "id": 13,
           "options": {
@@ -1161,7 +1161,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 31
+            "y": 39
           },
           "id": 15,
           "options": {
@@ -1361,7 +1361,7 @@
             "h": 6,
             "w": 10,
             "x": 10,
-            "y": 31
+            "y": 39
           },
           "id": 16,
           "options": {
@@ -1470,8 +1470,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -1487,7 +1486,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 24
+            "y": 32
           },
           "id": 18,
           "options": {
@@ -1585,8 +1584,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -1602,7 +1600,7 @@
             "h": 12,
             "w": 10,
             "x": 10,
-            "y": 24
+            "y": 32
           },
           "id": 19,
           "links": [
@@ -1694,8 +1692,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -1711,7 +1708,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 30
+            "y": 38
           },
           "id": 20,
           "options": {
@@ -1808,8 +1805,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -1825,7 +1821,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 36
+            "y": 44
           },
           "id": 21,
           "options": {
@@ -2069,8 +2065,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -2086,7 +2081,7 @@
             "h": 6,
             "w": 10,
             "x": 10,
-            "y": 36
+            "y": 44
           },
           "id": 22,
           "options": {
@@ -2209,7 +2204,7 @@
             "h": 5,
             "w": 3,
             "x": 0,
-            "y": 33
+            "y": 41
           },
           "id": 24,
           "options": {
@@ -2324,7 +2319,7 @@
             "h": 5,
             "w": 10,
             "x": 3,
-            "y": 33
+            "y": 41
           },
           "id": 25,
           "options": {
@@ -2438,7 +2433,7 @@
             "h": 6,
             "w": 13,
             "x": 0,
-            "y": 38
+            "y": 46
           },
           "id": 26,
           "options": {
@@ -2682,7 +2677,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 49
+            "y": 57
           },
           "id": 28,
           "options": {
@@ -2822,7 +2817,7 @@
             "h": 6,
             "w": 10,
             "x": 10,
-            "y": 49
+            "y": 57
           },
           "id": 29,
           "options": {
@@ -2944,7 +2939,7 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 7,
+            "h": 11,
             "w": 10,
             "x": 0,
             "y": 27
@@ -2999,7 +2994,7 @@
               }
             }
           ],
-          "title": "Quarkus REST",
+          "title": "Quarkus REST Timeseries",
           "transformations": [
             {
               "id": "calculateField",
@@ -3077,8 +3072,8 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 12,
-            "w": 9,
+            "h": 11,
+            "w": 10,
             "x": 10,
             "y": 27
           },
@@ -3463,15 +3458,292 @@
             }
           ],
           "title": "Hibernate ORM",
-          "transformations": [],
           "type": "timeseries"
+        },
+        {
+          "fieldConfig": {
+            "defaults": {
+              "custom": {
+                "align": "auto",
+                "cellOptions": {
+                  "type": "auto"
+                },
+                "inspect": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Field"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 841
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Max"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 105
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Min"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 87
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Mean"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 95
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "StdDev"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 88
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Count"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 64
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 20,
+            "x": 0,
+            "y": 38
+          },
+          "id": 34,
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": false
+            },
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Mean"
+              }
+            ]
+          },
+          "pluginVersion": "10.4.3",
+          "targets": [
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "duration",
+                  "type": "number"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "hide": false,
+              "parser": "backend",
+              "refId": "A",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "quarkus.Rest.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{\n  \"targets\": [\n    { \"refId\": \"A\", \"target\": \"quarkus.Rest.duration\", \"type\": \"timeserie\" }\n  ],\n  \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" }\n}",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "method",
+                  "type": "string"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "hide": false,
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "quarkus.Rest.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{\n  \"targets\": [\n    { \"refId\": \"B\", \"target\": \"quarkus.Rest.httpMethod\", \"type\": \"timeserie\" }\n  ],\n  \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" }\n}",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "path",
+                  "type": "string"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "hide": false,
+              "parser": "backend",
+              "refId": "C",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "quarkus.Rest.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{\n  \"targets\": [\n    { \"refId\": \"B\", \"target\": \"quarkus.Rest.uri\", \"type\": \"timeserie\" }\n  ],\n  \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" }\n}",
+                "method": "POST"
+              }
+            }
+          ],
+          "title": "Quarkus REST Endpoint Statistics",
+          "transformations": [
+            {
+              "id": "calculateField",
+              "options": {
+                "alias": "endpoint",
+                "binary": {
+                  "left": "method B",
+                  "right": "path C"
+                },
+                "mode": "binary",
+                "reduce": {
+                  "reducer": "sum"
+                },
+                "replaceFields": false
+              }
+            },
+            {
+              "id": "filterFieldsByName",
+              "options": {
+                "byVariable": false,
+                "include": {
+                  "names": [
+                    "endpoint",
+                    "duration A"
+                  ]
+                }
+              }
+            },
+            {
+              "id": "partitionByValues",
+              "options": {
+                "fields": [
+                  "endpoint"
+                ],
+                "keepFields": false,
+                "naming": {
+                  "asLabels": false
+                }
+              }
+            },
+            {
+              "id": "reduce",
+              "options": {
+                "labelsToFields": false,
+                "reducers": [
+                  "max",
+                  "min",
+                  "mean",
+                  "stdDev",
+                  "count"
+                ]
+              }
+            }
+          ],
+          "type": "table"
         }
       ],
       "title": "Frameworks",
       "type": "row"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "schemaVersion": 39,
   "tags": [],
   "templating": {
