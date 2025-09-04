@@ -2899,32 +2899,24 @@
                 "axisColorMode": "text",
                 "axisLabel": "",
                 "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 10,
-                "gradientMode": "none",
                 "hideFrom": {
                   "legend": false,
                   "tooltip": false,
                   "viz": false
                 },
-                "insertNulls": false,
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
+                "lineStyle": {
+                  "fill": "solid"
+                },
+                "pointSize": {
+                  "fixed": 5
+                },
                 "scaleDistribution": {
-                  "type": "linear"
+                  "log": 10,
+                  "type": "log"
                 },
-                "showPoints": "never",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
+                "show": "points"
               },
+              "fieldMinMax": false,
               "mappings": [],
               "thresholds": {
                 "mode": "absolute",
@@ -2938,8 +2930,7 @@
                     "value": 80
                   }
                 ]
-              },
-              "unit": "timeticks"
+              }
             },
             "overrides": []
           },
@@ -2949,20 +2940,35 @@
             "x": 0,
             "y": 27
           },
-          "id": 32,
+          "id": 36,
           "options": {
+            "dims": {
+              "frame": 0
+            },
             "legend": {
-              "calcs": [
-                "mean",
-                "max",
-                "min"
-              ],
+              "calcs": [],
               "displayMode": "list",
               "placement": "bottom",
-              "showLegend": true
+              "showLegend": false
             },
+            "series": [
+              {
+                "pointColor": {
+                  "fixed": "dark-green"
+                },
+                "pointSize": {
+                  "field": "duration A",
+                  "fixed": 50.5,
+                  "max": 20,
+                  "min": 5
+                },
+                "x": "timestamp",
+                "y": "duration A"
+              }
+            ],
+            "seriesMapping": "manual",
             "tooltip": {
-              "mode": "multi",
+              "mode": "single",
               "sort": "none"
             }
           },
@@ -2972,7 +2978,7 @@
               "columns": [
                 {
                   "selector": "0",
-                  "text": "quarkus.Rest.duration",
+                  "text": "duration",
                   "type": "number"
                 },
                 {
@@ -2984,6 +2990,7 @@
               "filters": [],
               "format": "as-is",
               "global_query_id": "",
+              "hide": false,
               "parser": "backend",
               "refId": "A",
               "root_selector": "datapoints",
@@ -2994,7 +3001,69 @@
               "url_options": {
                 "body_content_type": "application/json",
                 "body_type": "raw",
-                "data": "{ \"targets\": [{ \"refId\": \"A\", \"target\": \"quarkus.Rest.duration\", \"type\": \"timeserie\" }], \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" } }",
+                "data": "{\n  \"targets\": [\n    { \"refId\": \"A\", \"target\": \"quarkus.Rest.duration\", \"type\": \"timeserie\" }\n  ],\n  \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" }\n}",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "resourceClass",
+                  "type": "string"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "hide": false,
+              "parser": "backend",
+              "refId": "B",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "quarkus.Rest.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{\n  \"targets\": [\n    { \"refId\": \"B\", \"target\": \"quarkus.Rest.resourceClass\", \"type\": \"timeserie\" }\n  ],\n  \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" }\n}",
+                "method": "POST"
+              }
+            },
+            {
+              "columns": [
+                {
+                  "selector": "0",
+                  "text": "resourceMethod",
+                  "type": "string"
+                },
+                {
+                  "selector": "1",
+                  "text": "timestamp",
+                  "type": "timestamp_epoch"
+                }
+              ],
+              "filters": [],
+              "format": "as-is",
+              "global_query_id": "",
+              "hide": false,
+              "parser": "backend",
+              "refId": "C",
+              "root_selector": "datapoints",
+              "source": "url",
+              "target": "quarkus.Rest.duration",
+              "type": "json",
+              "url": "/query",
+              "url_options": {
+                "body_content_type": "application/json",
+                "body_type": "raw",
+                "data": "{\n  \"targets\": [\n    { \"refId\": \"B\", \"target\": \"quarkus.Rest.resourceMethod\", \"type\": \"timeserie\" }\n  ],\n  \"range\": { \"from\": \"${__timeFrom:date}\", \"to\": \"${__timeTo:date}\" }\n}",
                 "method": "POST"
               }
             }
@@ -3002,23 +3071,14 @@
           "title": "Quarkus REST Timeseries",
           "transformations": [
             {
-              "id": "calculateField",
+              "id": "joinByField",
               "options": {
-                "alias": "quarkus.Rest.duration",
-                "binary": {
-                  "left": "quarkus.Rest.duration",
-                  "operator": "/",
-                  "right": "10"
-                },
-                "mode": "binary",
-                "reduce": {
-                  "reducer": "sum"
-                },
-                "replaceFields": true
+                "byField": "timestamp",
+                "mode": "outer"
               }
             }
           ],
-          "type": "timeseries"
+          "type": "xychart"
         },
         {
           "fieldConfig": {
