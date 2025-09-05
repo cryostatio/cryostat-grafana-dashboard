@@ -1470,8 +1470,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -1585,8 +1584,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -1694,8 +1692,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -1808,8 +1805,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -2069,8 +2065,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -2666,7 +2661,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -2682,7 +2678,7 @@
             "h": 6,
             "w": 10,
             "x": 0,
-            "y": 57
+            "y": 26
           },
           "id": 28,
           "options": {
@@ -2806,7 +2802,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -2822,7 +2819,7 @@
             "h": 6,
             "w": 10,
             "x": 10,
-            "y": 57
+            "y": 26
           },
           "id": 29,
           "options": {
@@ -2891,7 +2888,8 @@
           "fieldConfig": {
             "defaults": {
               "color": {
-                "mode": "palette-classic"
+                "mode": "continuous-GrYlRd",
+                "seriesBy": "last"
               },
               "custom": {
                 "axisBorderShow": false,
@@ -2954,6 +2952,7 @@
             "series": [
               {
                 "pointColor": {
+                  "field": "duration A",
                   "fixed": "dark-green"
                 },
                 "pointSize": {
