@@ -21,7 +21,7 @@ jobs:
       CRYOSTAT_GRAFANA_IMG: quay.io/cryostat/cryostat-grafana-dashboard
       REF_NAME: ${{ github.ref_name }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
     - name: Install qemu
       continue-on-error: false
       run: |
