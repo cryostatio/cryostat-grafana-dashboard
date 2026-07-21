@@ -1,4 +1,4 @@
-FROM quay.io/centos/centos:stream9-minimal@sha256:de7aace215be790a9eddf7ee6d0789866c855809b6d26255ca24d89a0415b530
+FROM quay.io/centos/centos:stream9-minimal@sha256:b3b4913725f229b300d76d2737bcdb021a89c1c49d2adfd6e0507151ef3dd4a2
 ARG UID=101
 ARG PORT=3000
 
