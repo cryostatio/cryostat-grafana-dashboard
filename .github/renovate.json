@@ -21,9 +21,6 @@
   "major": {
     "dependencyDashboardApproval": true
   },
-<<<<<<< HEAD
-  "stopUpdatingLabel": "blocked"
-=======
   "stopUpdatingLabel": "blocked",
   "customManagers": [
     {
@@ -56,5 +53,4 @@
       "enabled": true
     }
   ]
->>>>>>> adbe040 (ci(qemu): use pinned binfmt image (#142))
 }
